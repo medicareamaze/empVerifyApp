@@ -23,8 +23,8 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      var permissions = cordova.plugins.permissions;
-      permissions.requestPermission(permissions.CAMERA, this.success, this.error);
+      //var permissions = cordova.plugins.permissions;
+      //permissions.requestPermission(permissions.CAMERA, this.success, this.error);
     });
   }
   error() {

@@ -10,8 +10,12 @@
   <ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="logo-ionic" slot="start"></ion-icon>
-      @ionicframework
+       
+       <ion-button size="large" expand="block"  shape="round" color="primary" fill="outline" (click)='scan()'>Scan</ion-button>
+      
+    </ion-item>
+    <ion-item>
+        <ion-img  [src]="data.imageURI"></ion-img>
     </ion-item>
   </ion-list>
 </ion-content>
